@@ -16,30 +16,46 @@
 			<div class="container description">
 				<div class="title-text">About Us</div>
 				<div class="text-container">
-					About Content
+					<Typing text="> python -m shugetsu.soft.description <br> Shugetsu Soft (Or Akizuki Soft) is an organization founded in the architecture of Project Shugetsu. As an individual development team, we've successfully maintained some successful project such as Pixivel.
+					In the future, we plan to further down into the frontier of the structure of a new internet, extending maximum ability of it. <br> Traceback (most recent call last): <br> &nbsp;&nbsp; File '/usr/lib64/python/shugetsu/soft/description.py' , line 246, in &lt; module &gt; <br> &nbsp;&nbsp;&nbsp;&nbsp; rorical.sleep() <br> AttributeError: module 'rorical' has no attribute 'sleep'<br> >"></Typing>
 				</div>
 			</div>
 		</div>
+		<!--
+		<div class="section">
+			<div class="container projects">
+				<div class="title-text">Projects</div>
+				<div class="text-container">
+					<a class="project card lift-hover" href="" target="_blank">
+						<img class="img" src="../assets/imgs/ro.jpg" />
+						<div class="text">
+							<div class="name">Rorical</div>
+							<div class="dec">敲代码的白毛萌妹</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>-->
 		<div class="section">
 			<div class="container team">
 				<div class="title-text">Team Members</div>
 				<div class="text-container">
-					<div class="member">
+					<a class="member card lift-hover" href="https://rorical.blue/" target="_blank">
 						<img class="avatar" src="../assets/imgs/ro.jpg" />
 						<div class="text">
 							<div class="name">Rorical</div>
 							<div class="split"></div>
 							<div class="dec">敲代码的白毛萌妹</div>
 						</div>
-					</div>
-					<div class="member">
+					</a>
+					<a class="member card lift-hover"  href="https://elfile4138.moe/" target="_blank">
 						<img class="avatar" src="../assets/imgs/elf.jpg" />
 						<div class="text">
 							<div class="name">MatrewFile</div>
 							<div class="split"></div>
 							<div class="dec">指挥萌妹的讨厌PM</div>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -53,17 +69,19 @@
 
 <script>
 	import Shapes from '../components/shapes.vue'
+	import Typing from '../components/typing.vue'
 	export default {
 		components: {
-			Shapes
+			Shapes,
+			Typing
 		},
 		data() {
 			return {
 
 			};
 		},
-		mounted() {
-
+		methods:{
+			
 		}
 	};
 </script>
@@ -224,7 +242,100 @@
 			}
 		}
 	}
+	.projects {
+		display: block;
+		background-color: var(--color-blue);
+		text-align: center;
+		
+		overflow: hidden;
+		
+		.title-text {
+			display: block;
+			width: 100%;
+			text-align: center;
+			text-shadow: 0.07em 0.07em rgba(3, 3, 3, 0.3);
+			color: white;
 
+			padding: {
+				top: 2rem;
+				bottom: 2rem;
+			}
+
+			font: {
+				family: "Righteous Regular";
+				size: 2em;
+			}
+		}
+
+		.text-container {
+			height: auto;
+			width: auto;
+			background-color: transparent;
+			margin: auto;
+			padding: 96px 128px;
+			display: inline-flex;
+			color: rgba(0, 0, 0, 0.8);
+			line-height: 32px;
+			text-align: center;
+
+			font: {
+				family: "Consolas","Sarasa Light";;
+				size: 1.1em;
+			}
+			
+			.project {
+				border: .0625rem solid rgba(0, 0, 0, .05);
+				background-color: var(--color-red);
+				border-radius: 1rem;
+				width: 30rem;
+				height: 30rem;
+				justify-content: center;
+				align-items: center;
+				margin: 15px 1%;
+				user-select: none;
+				text-decoration: none;
+				overflow: default;
+				.img {
+					margin: 40px 24px 18px;
+					
+					width: 14rem;
+					height: 14rem;
+					margin: {
+						right: 10px;
+						left: 10px;
+					}
+					object-fit: cover;
+					border-radius: 10px;
+					border: white 0.2rem solid;
+				}
+				
+				.text {
+					width: 100%;
+					text-align: center;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					color: white;
+					
+					.name {
+						line-height: 1.5;
+				
+						font: {
+							family: "Righteous Regular";
+							size: 2.8em;
+						}
+					}
+				
+					.dec {
+						font: {
+							family: "Mononoki Regular","Sarasa Light";
+							size: 1.2em;
+						}
+					}
+				}
+			}
+		}
+	}
 	.team {
 		display: block;
 		background-color: var(--color-yellow);
@@ -259,7 +370,8 @@
 			align-items: center;
 			flex-direction: row;
 			margin: 15px 1%;
-
+			user-select: none;
+			text-decoration: none;
 			.avatar {
 				width: 8rem;
 				height: 8rem;
@@ -338,5 +450,16 @@
 				size: 1.1em;
 			}
 		}
+	}
+	
+	.lift-hover {
+		transition: transform .1s ease-in-out, shadow .1s ease-in-out;
+		&:hover {
+			transform: translate(0px, -10px);
+		}
+	}
+	
+	.card {
+		box-shadow: 0 0 8px rgba(0,0,0,.175);
 	}
 </style>

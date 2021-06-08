@@ -94,7 +94,6 @@
 		overflow: hidden;
 		width: 100%;
 		height: 100%;
-
 		img {
 			position: absolute;
 			top: 0;
