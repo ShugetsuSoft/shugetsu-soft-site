@@ -56,6 +56,14 @@
 							<div class="dec">指挥萌妹的讨厌PM</div>
 						</div>
 					</a>
+          <a class="member card lift-hover"  href="https://blog.daihan.top/" target="_blank">
+            <img class="avatar" src="../assets/imgs/ssf.jpg" />
+            <div class="text">
+              <div class="name">Sukanu</div>
+              <div class="split"></div>
+              <div class="dec">啥也不会的团欺咸鱼</div>
+            </div>
+          </a>
 				</div>
 			</div>
 		</div>
