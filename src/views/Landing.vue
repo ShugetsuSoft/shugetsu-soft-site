@@ -21,25 +21,24 @@
 				</div>
 			</div>
 		</div>
-		<!--
 		<div class="section">
 			<div class="container projects">
 				<div class="title-text">Projects</div>
-				<div class="text-container">
-					<a class="project card lift-hover" href="" target="_blank">
-						<img class="img" src="../assets/imgs/ro.jpg" />
+				<div class="text-container container-projects">
+					<a class="project card lift-hover" href="" target="_blank" style="background-color: #6be2f5">
+						<img class="img" src="../assets/imgs/pixivel.png" style="background-color: white;" />
 						<div class="text">
-							<div class="name">Rorical</div>
-							<div class="dec">敲代码的白毛萌妹</div>
+							<div class="name">Pixivel</div>
+							<div class="dec">优雅的Pixiv镜像站</div>
 						</div>
 					</a>
 				</div>
 			</div>
-		</div>-->
+		</div>
 		<div class="section">
 			<div class="container team">
 				<div class="title-text">Team Members</div>
-				<div class="text-container">
+				<div class="text-container team-members">
 					<a class="member card lift-hover" href="https://rorical.blue/" target="_blank">
 						<img class="avatar" src="../assets/imgs/ro.jpg" />
 						<div class="text">
@@ -67,6 +66,14 @@
 				</div>
 			</div>
 		</div>
+    <div class="section">
+      <div class="container links">
+        <div class="title-text">Links</div>
+        <div class="text-container">
+          <a> Project ZERONE </a>
+        </div>
+      </div>
+    </div>
 		<div class="section footer">
 			<div class="text">
 				Copyright © 2021 Project Shugetsu. All Rights Reserved.
@@ -180,6 +187,19 @@
 			position: relative;
 			color: white;
 
+      @media screen and (max-width: 844px) {
+        .title-text {
+          font: {
+            size: 3.5rem !important;
+          }
+        }
+        .subtitle-text {
+          font: {
+            size: 1.1rem !important;
+          }
+        }
+      }
+
 			.title-text {
 				text-align: center;
 				text-shadow: 0.04em 0.04em rgba(3, 3, 3, 0.3);
@@ -239,23 +259,85 @@
 			width: 80%;
 			background-color: white;
 			margin: auto;
-			padding: 96px 128px;
+			padding: 76px 108px;
 			display: block;
 			color: rgba(0, 0, 0, .65);
 			line-height: 32px;
 
+      @media screen and (max-width: 844px) {
+        padding: 16px 16px;
+      }
+
+      .content {
+        overflow-wrap: anywhere;
+      }
 			font: {
 				family: "Consolas","Sarasa Light";
 				size: 1.1em;
 			}
 		}
 	}
+  .links {
+    display: block;
+    background-color: var(--color-red);
+    text-align: center;
+
+    overflow: hidden;
+
+    .title-text {
+      display: block;
+      width: 100%;
+      text-align: center;
+      text-shadow: 0.07em 0.07em rgba(3, 3, 3, 0.3);
+      color: white;
+
+      padding: {
+        top: 2rem;
+      }
+
+      font: {
+        family: "Righteous Regular";
+        size: 2em;
+      }
+    }
+
+    .text-container {
+      height: auto;
+      width: auto;
+      background-color: transparent;
+      margin: auto;
+      padding: 76px 108px;
+      display: inline-flex;
+      color: rgba(0, 0, 0, 0.8);
+      line-height: 32px;
+      text-align: center;
+
+      font: {
+        family: "Consolas","Sarasa Light";;
+        size: 1.1em;
+      }
+
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+
+    }
+  }
+
 	.projects {
 		display: block;
 		background-color: var(--color-blue);
 		text-align: center;
 		
 		overflow: hidden;
+
+    .container-projects {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 80% !important;
+      padding: 46px 0 !important;
+    }
 		
 		.title-text {
 			display: block;
@@ -266,7 +348,6 @@
 
 			padding: {
 				top: 2rem;
-				bottom: 2rem;
 			}
 
 			font: {
@@ -280,7 +361,7 @@
 			width: auto;
 			background-color: transparent;
 			margin: auto;
-			padding: 96px 128px;
+			padding: 76px 108px;
 			display: inline-flex;
 			color: rgba(0, 0, 0, 0.8);
 			line-height: 32px;
@@ -295,14 +376,14 @@
 				border: .0625rem solid rgba(0, 0, 0, .05);
 				background-color: var(--color-red);
 				border-radius: 1rem;
-				width: 30rem;
-				height: 30rem;
+        width: 20rem;
+        height: 27rem;
 				justify-content: center;
 				align-items: center;
 				margin: 15px 1%;
 				user-select: none;
 				text-decoration: none;
-				overflow: default;
+				overflow: initial;
 				.img {
 					margin: 40px 24px 18px;
 					
@@ -344,6 +425,12 @@
 			}
 		}
 	}
+  .team-members {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80% !important;
+    padding: 46px 0 !important;
+  }
 	.team {
 		display: block;
 		background-color: var(--color-yellow);
@@ -358,7 +445,6 @@
 
 			padding: {
 				top: 2rem;
-				bottom: 2rem;
 			}
 
 			font: {
