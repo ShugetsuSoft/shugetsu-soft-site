@@ -25,7 +25,7 @@
 			<div class="container projects">
 				<div class="title-text">Projects</div>
 				<div class="text-container container-projects">
-					<a class="project card lift-hover" href="" target="_blank" style="background-color: #6be2f5">
+					<a class="project card lift-hover" href="https://pixivel.moe/" target="_blank" style="background-color: #6be2f5">
 						<img class="img" src="../assets/imgs/pixivel.png" style="background-color: white;" />
 						<div class="text">
 							<div class="name">Pixivel</div>
