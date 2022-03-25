@@ -76,7 +76,7 @@
     </div>
 		<div class="section footer">
 			<div class="text">
-				Copyright © 2021 Project Shugetsu. All Rights Reserved.
+				Copyright © 2022 Project Shugetsu. All Rights Reserved.
 			</div>
 		</div>
 	</div>
