@@ -58,7 +58,12 @@
 	
 	@font-face {
 		font-family: 'Sarasa Light';
-		src: url('./assets/fonts/sarasa-ui-k-light.ttf');
+		src: url('./assets/fonts/sarasa-ui-sc-light.ttf');
 	}
-	
+
+  @font-face {
+    font-family: 'WenKai';
+    src: url("./assets/fonts/LXGWWenKai-Light.ttf");
+  }
+
 </style>

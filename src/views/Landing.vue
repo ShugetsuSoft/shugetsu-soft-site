@@ -426,14 +426,14 @@
 						line-height: 1.5;
 				
 						font: {
-							family: "Righteous Regular";
+							family: "Righteous Regular", "WenKai";
 							size: 2.8em;
 						}
 					}
 				
 					.dec {
 						font: {
-							family: "Mononoki Regular","Sarasa Light";
+							family: "Mononoki Regular","Sarasa Light", "WenKai";
 							size: 1.2em;
 						}
 					}
@@ -511,7 +511,7 @@
 					line-height: 1.5;
 
 					font: {
-						family: "Righteous Regular";
+						family: "Righteous Regular","WenKai";
 						size: 2.8em;
 					}
 				}
