@@ -63,6 +63,22 @@
               <div class="dec">啥也不会的团欺咸鱼</div>
             </div>
           </a>
+          <a class="member card lift-hover">
+            <img class="avatar" src="../assets/imgs/酒某.jpg" />
+            <div class="text">
+              <div class="name">酒某</div>
+              <div class="split"></div>
+              <div class="dec">世界级非著名空想家</div>
+            </div>
+          </a>
+          <a class="member card lift-hover">
+            <img class="avatar" src="../assets/imgs/温然.jpg" />
+            <div class="text">
+              <div class="name">温然</div>
+              <div class="split"></div>
+              <div class="dec">想拥有电脑的码字人</div>
+            </div>
+          </a>
 				</div>
 			</div>
 		</div>
@@ -454,7 +470,7 @@
 		}
 
 		.member {
-			width: 27rem;
+			width: 26rem;
 			height: 10rem;
 			border: .0625rem solid rgba(0, 0, 0, .05);
 			background-color: #6be2f5;
@@ -519,6 +535,10 @@
 			color: rgba(0, 0, 0, 0.8);
 			line-height: 32px;
 			text-align: center;
+
+      .gap20 {
+        width: 20px;
+      }
 
 			font: {
 				family: "Consolas","Sarasa Light";;
