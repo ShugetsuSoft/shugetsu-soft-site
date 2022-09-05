@@ -63,7 +63,7 @@
 
   @font-face {
     font-family: 'WenKai';
-    src: url("./assets/fonts/LXGWWenKai-Light.ttf");
+    src: url("./assets/fonts/LXGWWenKai-Bold.ttf");
   }
 
 </style>
